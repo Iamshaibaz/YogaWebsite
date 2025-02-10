@@ -1,0 +1,283 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #59ba5d;
+    padding: 3px;
+}
+
+header .logo {
+    width: 120px;
+    height: auto;
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+
+nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav .dropdown-menu li a {
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+nav .dropdown-menu li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;  /* Increase the font size */
+    font-family: 'Arial', sans-serif;  /* Change the font family (you can use other fonts like Google Fonts) */
+    font-weight: bold;  /* Make the text bold */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);  /* Add more intense shadow */
+    letter-spacing: 5px;  /* Increase letter spacing for a more dramatic effect */
+    text-transform: uppercase;  /* Make the text uppercase */
+    line-height: 1.2;  /* Adjust line height to create some space */
+    padding: 0 20px;  /* Add some padding to the left and right */
+    text-align: center;  /* Center the text horizontally */
+}
+
+
+/* Services Section Styling */
+.services {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service-grid a {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.service-grid a:hover {
+    background-color: #45a049;
+}
+
+/* Client Logos Section Styling */
+.client-logos {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.client-logos h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.logo-grid img {
+    width: 100px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.logo-grid img:hover {
+    opacity: 1;
+}
+
+/* Testimonies Section Styling */
+.testimonies {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonies h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial p:last-child {
+    font-weight: bold;
+}
+
+/* Our Roadmap Section Styling */
+.roadmap {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.roadmap h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.roadmap-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.step {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1.1rem;
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
