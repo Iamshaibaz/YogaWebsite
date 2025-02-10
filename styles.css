@@ -97,21 +97,74 @@ nav .dropdown-menu li a:hover {
 
 
 /* Services Section Styling */
+/* Services Section */
 .services {
     padding: 40px 20px;
     background-color: #f4f4f4;
-}
-
-.services h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers the content */
+    justify-content: center; /* Vertically centers the content */
     text-align: center;
-    margin-bottom: 20px;
 }
 
+/* Heading Styling */
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Service Grid Styling */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 40px;
+    justify-items: center; /* Centers each service box inside the grid */
+    width: 100%;
+    max-width: 1200px; /* Optional: sets a max width to avoid the grid becoming too wide */
 }
+
+/* Styling for each service box */
+.service-grid a {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 250px; /* Optional: limits the size of each service box */
+    box-sizing: border-box;
+}
+
+.service-grid a:hover {
+    background-color: #45a049;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .services {
+        padding: 20px;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 .service-grid a {
     display: block;
@@ -129,16 +182,68 @@ nav .dropdown-menu li a:hover {
 }
 
 /* Client Logos Section Styling */
+/* Client Logos Section Styling */
 .client-logos {
     padding: 40px 20px;
     background-color: #f4f4f4;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center content horizontally */
+    justify-content: center;  /* Center content vertically */
 }
 
+/* Client Logos Heading Styling */
 .client-logos h2 {
     margin-bottom: 20px;
     font-size: 2rem;
+    color: #333;
 }
+
+/* Logo Grid Styling */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;  /* Center logos in grid cells */
+    width: 100%;
+    max-width: 1200px;  /* Optional: limit the width to prevent logos from stretching too far */
+}
+
+/* Logo Image Styling */
+.logo-grid img {
+    width: 100px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effect on Logo */
+.logo-grid img:hover {
+    opacity: 1;
+}
+
+/* Responsiveness for Medium and Mobile Screens */
+@media (max-width: 768px) {
+    .client-logos {
+        padding: 20px;
+    }
+
+    .client-logos h2 {
+        font-size: 1.5rem;
+    }
+
+    .logo-grid {
+        grid-template-columns: 1fr 1fr;  /* 2 columns on medium-sized screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-grid {
+        grid-template-columns: 1fr;  /* 1 column on mobile screens */
+    }
+}
+
 
 .logo-grid {
     display: grid;
@@ -159,56 +264,201 @@ nav .dropdown-menu li a:hover {
 }
 
 /* Testimonies Section Styling */
+/* Testimonies Section Styling */
 .testimonies {
     padding: 40px 20px;
     background-color: #fff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
 }
 
+/* Testimonies Heading Styling */
 .testimonies h2 {
     margin-bottom: 20px;
     font-size: 2rem;
+    color: #333;
 }
 
+/* Testimonial Grid Styling */
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    justify-items: center;  /* Centers each testimonial box */
+    width: 100%;
+    max-width: 1200px;  /* Optional: sets a max width to avoid stretching */
 }
 
+/* Testimonial Box Styling */
 .testimonial {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;  /* Centers the text inside each testimonial */
 }
 
+/* Testimonial Text Styling */
 .testimonial p {
     font-style: italic;
     margin-bottom: 10px;
 }
 
+/* Testimonial Author Styling */
 .testimonial p:last-child {
     font-weight: bold;
 }
 
+/* Responsiveness for Medium and Mobile Screens */
+@media (max-width: 768px) {
+    .testimonies {
+        padding: 20px;
+    }
+
+    .testimonies h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr 1fr;  /* 2 columns on medium-sized screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;  /* 1 column on mobile screens */
+    }
+}
+
+
 /* Our Roadmap Section Styling */
+/* Roadmap Section Styling */
+/* Roadmap Section Styling */
 .roadmap {
     padding: 40px 20px;
     background-color: #f4f4f4;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
 }
 
+/* Roadmap Heading Styling */
 .roadmap h2 {
     margin-bottom: 20px;
     font-size: 2rem;
+    color: #333;
 }
 
+/* Roadmap Steps Grid Styling */
 .roadmap-steps {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
+    justify-items: center;  /* Centers each step box */
+    width: 100%;
+    max-width: 1200px;  /* Optional: sets a max width to avoid stretching */
+    grid-auto-rows: 250px; /* Ensures all steps have the same height */
 }
+
+/* Step Box Styling */
+.step {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centers the content inside the step */
+    height: 250px; /* Set a fixed height for consistency */
+    width: 100%; /* Makes the box take full width in its column */
+}
+
+/* Step Number Styling */
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Step Description Styling */
+.step p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    overflow: hidden; /* Prevents the text from overflowing the box */
+}
+
+/* Responsiveness for Medium and Mobile Screens */
+@media (max-width: 768px) {
+    .roadmap {
+        padding: 20px;
+    }
+
+    .roadmap h2 {
+        font-size: 1.5rem;
+    }
+
+    .roadmap-steps {
+        grid-template-columns: 1fr 1fr;  /* 2 columns on medium-sized screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .roadmap-steps {
+        grid-template-columns: 1fr;  /* 1 column on mobile screens */
+    }
+}
+
+
+/* Step Box Styling */
+.step {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;  /* Centers the text inside each step */
+}
+
+/* Step Number Styling */
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Step Description Styling */
+.step p {
+    font-size: 1.1rem;
+}
+
+/* Responsiveness for Medium and Mobile Screens */
+@media (max-width: 768px) {
+    .roadmap {
+        padding: 20px;
+    }
+
+    .roadmap h2 {
+        font-size: 1.5rem;
+    }
+
+    .roadmap-steps {
+        grid-template-columns: 1fr 1fr;  /* 2 columns on medium-sized screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .roadmap-steps {
+        grid-template-columns: 1fr;  /* 1 column on mobile screens */
+    }
+}
+
 
 .step {
     background-color: #fff;
